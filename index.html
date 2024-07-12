@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Home" class="active">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">WORKS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Home">
+        <div class="gridContainer">
+            <p id="qoutes1">Your <strong>concept</strong> should be <strong>carefully <br>considered</strong> and <strong>developed.</strong></p>
+            <h5 id="qoutes2">"Shaping the digital landscape, <br>one website at a time."</h5>
+        </div>
+        <p id="qoutes3">Hi, I'm Raf <br>and I am a website developer focused on bringing your vision to life online. <br>Let's work together to create a standout digital presence!</p>
+        <button id="learn" onclick="learnMore('#about')">LEARN MORE</button>
+    </section>
+
+    <section id="about">
+        <div class="gridContainer1">
+            <div id="prof">
+                <img src="mypic.jpg" alt="myPicture" width="400px" height="400px">
+            </div>
+            <div class="text-content">
+                <p id="about1">Hello <strong>I'm Rafael V. Caalam. </strong><br>I'm a <strong>Website Developer.</strong></p>
+                <p id="about2">A passionate website developer with a love for turning ideas into captivating digital experiences. With a keen eye for design and a knack for coding, I specialize in crafting user-friendly websites that leave a lasting impression. When I'm not immersed in lines of code, you'll find me exploring new technologies, indulging in creative pursuits, or simply enjoying a good cup of coffee. Join me on this digital journey as we bring your vision to life, one pixel at a time.</p>
+                <div id="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="facebookLogo" width="50px" height="50px"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="instagram.jpg" alt="instagramLogo" width="50px" height="50px"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="twitterLogo" width="50px" height="50px"></a>
+                    <a href="https://www.messenger.com/" target="_blank"><img src="messenger.jpg" alt="messengerLogo" width="50px" height="50px"></a>
+                </div>
+                <button id="cvButton" onclick="downloadCV()">Download CV</button>
+            </div>
+        </div>
+    </section>  
+    
+    <section id="portfolio">
+        <h1 id="myPortfolio">My Projects</h1>
+        <div class="myProjects">
+            <div class="project">
+                <a href="https://rafaelcaalam.github.io/ipt101-calculator-app/" target="_blank">
+                    <img src="calculator.png" alt="calculatorLogo" width="300px" height="300px">
+                </a>
+                <p>Calculator App</p>
+            </div>
+            <div class="project">
+                <a href="https://rafaelcaalam.github.io/rock-paper-scissor/" target="_blank">
+                    <img src="rockgame.png" alt="rockgameLogo" width="300px" height="300px">
+                </a>
+                <p>Rock Paper Scissors Game</p>
+            </div>
+            <div class="project">
+                <a href="https://rafaelcaalam.github.io/online-resume/" target="_blank">
+                    <img src="resume.png" alt="resumeLogo" width="300px" height="300px">
+                </a>
+                <p>Online Resume</p>
+            </div>
+        </div>
+        <button id="seeMore" onclick="goToLink()">SEE MORE>>></button>
+        </div>
+
+    </section>
+    
+    <section id="contact">
+        
+        <form id="contact-form">
+            <h2 id="contactMe">Contact Me</h2>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="emailContainer">
+            <p id="emailFont">Email Address <br>caalamrafael52@gmail.com</p>
+            <button id="sendEmailButton">Send Email</button>
+        </div>
+        <div id="messengerContainer">
+            <p id="messageFont">Messenger <br>Rafael Viray Caalam</p>
+            <button id="sendMessageButton" onclick="goToMessenger()">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
